@@ -1,11 +1,10 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,700,300");
 
-/*
-	Archetype by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
-*/
+:root {
+  --semitransparent-dark: rgba(0,0,0, 0.45);
+  --semitransparent-light: rgba(0,0,0, 0.2);
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -4088,7 +4087,7 @@ input, select, textarea {
 			-webkit-animation: none;
 			-ms-animation: none;
 			animation: none;
-			background: transparent;
+			background: rgba(0, 0, 0, 0.45);
 			height: 5em;
 			line-height: 5em;
 			position: absolute;
@@ -4194,17 +4193,14 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
-		background-image: url("images/overlay.png"), linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("../../images/banner.jpg");
-		background-position: center center;
-		background-size: auto, cover, cover;
+		background-image: url("../../images/naslovna1.jpg");
+		background-position:center;
+		background-size: cover;
 		background-attachment: fixed, fixed, fixed;
-		background-repeat: repeat, no-repeat, no-repeat;
+		background-repeat: no-repeat;
 		position: relative;
 		min-height: 70vh;
-		height: 35em;
+		height: 100vh;
 	}
 
 		#banner .content {
@@ -4213,7 +4209,7 @@ input, select, textarea {
 			left: 0;
 			background-color: rgba(21, 27, 33, 0.6);
 			color: #ffffff;
-			padding: 6.5em 0 4.5em 0 ;
+			padding: 4.5em 0 3.5em 0 ;
 			width: 100%;
 		}
 
@@ -4526,7 +4522,7 @@ input, select, textarea {
 		}
 
 		#footer .content {
-			padding: 6.5em 0 4.5em 0 ;
+			padding: 3.5em 0 2.5em 0 ;
 			background-color: rgba(21, 27, 33, 0.6);
 		}
 
@@ -4613,12 +4609,12 @@ input, select, textarea {
 		#footer .copyright {
 			font-size: 0.8em;
 			margin: 0;
-			padding: 8em 0;
+			padding: 4em 0;
 			text-align: center;
 		}
 
 			#footer .copyright br {
-				display: none;
+				display: block;
 			}
 
 			#footer .copyright a {
